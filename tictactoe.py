@@ -192,61 +192,6 @@ def minimax(current_state, depth, player, alpha, beta):
 
     return best_value, best_move
 
-    """
-    # player MAX
-    if player == "X":
-        best_value = -1000000
-        # calculate all next possible moves
-        possibleStates = nextMove(current_state, "X")
-        # init next best move
-        best_move = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-        # loop through all possible moves
-        for i in range(len(possibleStates)):
-            # recursive minimax call for current possible move
-            value, move = minimax(possibleStates[i], depth-1, "O", alpha, beta)
-            for j in range(3):
-                for k in range(3):
-                    if current_state[j][k] != move[j][k] and current_state[j][k] != player:
-                        move[j][k] = 0
-            
-            # check for best heuristic value
-            if value > best_value:
-                best_value = value
-                best_move = move
-                if best_value > alpha:
-                    alpha = best_value
-            
-            # alpha-beta pruning
-            if alpha >= beta:
-                return best_value, best_move
-
-        return best_value, best_move
-
-    # player MIN
-    elif player == "O":
-        best_value = 1000000
-        # calculate all next possible moves
-        possibleStates = nextMove(current_state, "O")
-        # init next best move
-        best_move = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-        for i in range(len(possibleStates)):
-            value, move = minimax(possibleStates[i], depth-1, "X", alpha, beta)
-            for j in range(3):
-                for k in range(3):
-                    if current_state[j][k] != move[j][k] and move[j][k] != player:
-                        move[j][k] = 0
-
-            if value < best_value:
-                best_value = value
-                best_move = move
-                if best_value < beta:
-                    beta = best_value
-            
-            if alpha >= beta:
-                return best_value, best_move
-        
-        return best_value, best_move
-    """
         
 
 # when a button is clicked
@@ -321,14 +266,6 @@ def checkCells(cells):
             game_over = True
     return game_over
 
-
-
-"""
-s = [[0, "X", 0],
-     ["X", "X", 0], 
-     [0, "O", "O"]]
-print(heuristic(s))
-"""
 
 
 
