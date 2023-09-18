@@ -7,4 +7,4 @@
 - you can reset the game at any time and start over
 
 ## LIVE DEMO
-[![Watch the video](initial_state.PNG)](https://github.com/JakobOpresnik/tictactoe/blob/master/demo_video.mp4)
+[![Watch the video](initial_state.PNG)](https://youtu.be/tVZEN965ctM)
