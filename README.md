@@ -7,7 +7,9 @@
 - you can reset the game at any time and start over
 
 ## LIVE DEMO
-(click on the video will redirect you to YouTube)
+`depth=3` meaning AI takes all your possible moves for 3 moves ahead into account when deciding its next move
+
+(click on the image below will redirect you to YouTube)
 </br>
 
 [![Watch the video](initial_state.PNG)](https://youtu.be/tVZEN965ctM)
