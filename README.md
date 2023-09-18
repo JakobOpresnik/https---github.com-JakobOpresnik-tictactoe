@@ -7,4 +7,7 @@
 - you can reset the game at any time and start over
 
 ## LIVE DEMO
+(click on the video will redirect you to YouTube)
+</br>
+
 [![Watch the video](initial_state.PNG)](https://youtu.be/tVZEN965ctM)
